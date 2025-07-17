@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+  color: black;
+  font-size: 14px;
+}
+
+body {
+  min-width: 500px;
+  margin: auto;
+  background-color: #f3f7f8;
+}
+
+header, footer{
+  text-align: center;
+  min-width: 500px;
+  height: 50px;
+  padding: 15px 0 30px 0;
+  background-color: #025159;
+  color: #FFFFFF;
+}
+
+.navLogo {
+  font-size: 2.9rem;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.navLogo, h2 {
+  font-family: trilby, serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+footer p {
+  font-size: .8rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-auto-rows: 450px;
+  gap: 20px;
+  margin: 44px 0;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+  color: #F2BC1B;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.bear {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.weight {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 20px;
+}
+
+.lbs {
+  /*inline-block allows the text to share a line with the scale image*/
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  /*Moves the weight 5 pixels up from the bottom.*/
+  position: relative;
+  bottom: 5px;
+}
+
+.description {
+  font-weight: 300;
+  line-height: 1.29;
+  text-align: left;
+  color: #4a4a4a;
+  padding: 10px;
+  border-top: 1px solid #4a4a4a;
+}

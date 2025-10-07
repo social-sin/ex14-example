@@ -1,12 +1,14 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   font-family: Helvetica, sans-serif;
-  color: black;
   font-size: 14px;
+  color: #000;
 }
 
 body {
@@ -15,29 +17,24 @@ body {
   background-color: #f3f7f8;
 }
 
-header, footer{
+header, footer {
   text-align: center;
   min-width: 500px;
   height: 50px;
-  padding: 15px 0 30px 0;
+  padding: 15px 0 30px;
   background-color: #025159;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .navLogo {
+  font-family: trilby, serif;
+  font-weight: 900;
   font-size: 2.9rem;
-  font-weight: 700;
   padding: 10px;
 }
 
-.navLogo, h2 {
-  font-family: trilby, serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
 footer p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 main {
@@ -49,36 +46,34 @@ main {
   justify-content: center;
 }
 
-h2 {
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: left;
-  color: #F2BC1B;
-  padding: 10px;
+.bear {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.5);
 }
 
-img {
+.bear img {
   width: 100%;
   height: auto;
 }
 
-.bear {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+h2 {
+  font-family: trilby, serif;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #F2BC1B;
+  padding: 10px;
 }
 
 .weight {
-  padding-left: 10px;
-  padding-top: 10px;
   width: 20px;
+  margin-left: 10px;
+  vertical-align: middle;
 }
 
 .lbs {
-  /*inline-block allows the text to share a line with the scale image*/
   display: inline-block;
   font-weight: 500;
   letter-spacing: 0.3px;
-  /*Moves the weight 5 pixels up from the bottom.*/
   position: relative;
   bottom: 5px;
 }
